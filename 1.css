@@ -1,0 +1,105 @@
+body{
+  font-size:16px;
+
+background-size: 30px 30px, 90px 90px;
+background-position: 0 0;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+nav ul li {
+display: inline-block;
+}
+
+#wapper{
+  width: 960px;
+  margin: 0 auto;
+  background: #f3f2de;
+}
+
+
+/*header*/
+h1{
+  margin:0;
+}
+header{
+  background-image: url("img/wave.png");
+  background-repeat: repeat-x;
+  height: 100px;
+ 
+}
+
+#head{
+  height: 80px;
+}
+#selene{
+  margin-right:auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+/*footer*/
+footer{
+  height:100px;
+   background-color: #e9956f;
+}
+nav{
+  margin: 0;
+}
+ul{
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+}
+
+ul li{
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+  padding: 0 15px;
+  
+}
+ul li a{
+  color:white;
+  display: block;
+  padding: 30px;
+}
+a:hover{
+  background-color: #999;
+}
+
+/*content*/
+#content{
+  margin: 0 auto;
+  width: 960px;
+}
+#content h1{
+  text-align: center;
+  color:#3dc5c2;
+}
+#date{
+  width: 200px;
+  margin: 0 auto;
+}
+
+#date h2{
+ text-align: center;
+  color: #3dc5c2;
+}
+
+/*隐藏其他三个div*/
+#content_calendar{
+  display: none;
+}
+#content_history{
+  display: none;
+}
+#content_setting{
+  display: none;
+}
