@@ -1,0 +1,137 @@
+/*home*/
+#content_home{
+  background: url(img/home_bac.png) no-repeat;
+  height: 400px;
+}
+
+#home_start{
+  padding: 130px 0px 0 410px;
+}
+#home_start h2{
+  font-size: 30px;
+  color: #56a9af;
+  margin: 10px 5px 0 0;
+}
+#home_start #appointment{
+  font-size: 22px;
+}
+
+#home_start span{
+  font-size: 40px;
+  text-align: center;
+  margin: 0 10px;
+}
+#input_start{
+  padding: 50px 35px;
+}
+#start{
+  background-color: #fd9a9b;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px -20px;
+}
+
+#date{
+  padding: 150px;
+}
+#date #record-now{
+  background-color: #56a9af;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+#date span{
+  color: #d5f0f2;
+  font-size: 20px;
+}
+#date .btn{
+  border: none;
+  border-radius: 10px;
+  background-color: #d5f0f2;
+  color: #56a9af;
+  font-size: 20px;
+  margin: 10px 0 ;
+}
+#date select{
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 4px;
+}
+
+#date select option{
+  width: 60px;
+}
+
+
+/*calendar*/
+#content_calendar{
+  height: 400px;
+}
+
+#content_calendar table{
+ font-size: 23px;
+  color: #56a9af;
+  border: solid 1px #56a9af;
+}
+#content_calendar caption{
+  font-size: 40px;
+  font-weight: bold;
+}
+#rol0{
+  background-color: #56a9af;
+  color:#fff;
+}
+
+#content_calendar td{
+  width: 55px;
+  border: solid 1px #d5f0f2;
+}
+
+/*history*/
+#content_history{
+  height: 400px;
+}
+#history-middle{
+  width: 600px;
+  height: 20px;
+  margin: 15px 180px;
+  background-color: #fd9a9b;
+}
+#history-bottom{
+  margin: -30px 330px;
+}
+#history-content td{
+  width: 300px;
+}
+
+/*setting*/
+#content_setting{
+  height: 400px;
+}
+#content_setting img{
+  border: solid 3px #d4d4d4 ;
+  margin: 0 auto;
+  width: 190px;
+  height: 180px;
+}
+#content_setting a:hover{
+  background-color:  #ff9e9d;
+}
+#content_setting a{
+  display: inline-block;
+  height: 190px;
+  width: 200px;
+  margin:5px 10px;
+}
+#set{
+  margin: 0 0  0 40px;
+}
+
+canvas{
+	width:960px;
+	height:auto;
+	display: inline-block;
+	position:absolute;
+}

@@ -15,7 +15,7 @@ display: inline-block;
 #wapper{
   width: 960px;
   margin: 0 auto;
-  background: #f3f2de;
+  background: #fffded;
 }
 
 
@@ -62,7 +62,7 @@ ul li{
   font-size: 30px;
   width: 150px;
   text-align: center;
-  padding: 0 15px;
+  padding: 0 30px;
   
 }
 ul li a{
@@ -84,7 +84,7 @@ a:hover{
   color:#3dc5c2;
 }
 #date{
-  width: 200px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -103,3 +103,82 @@ a:hover{
 #content_setting{
   display: none;
 }
+
+
+
+/*cal table css*/
+#content_calendar h1{
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#content_calendar table{
+  margin: 0 auto;
+}
+#rol0 td{
+  border:0;
+}
+thead{
+  background-color: #fff;
+}
+
+caption{
+  /*! background-color: lightpink; */
+}
+
+#right, #left{
+  cursor: pointer;
+}
+
+/*history*/
+#content_history{
+  background-image: url(img/history_bac.png);
+  
+}
+#history-top{
+  height: 220px;
+}
+
+#period{
+  font-size: 80px;
+  color:#56a9af;
+  display: block;  
+  padding: 90px 430px 0px;
+}
+#history-bottom{
+  width: 290px;
+  margin: 0 auto;
+}
+
+#history-content{
+  background: #ffffff; 
+}
+#history-content thead{
+  background: #fd9a9b;
+}
+
+
+
+#record-now{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

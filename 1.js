@@ -13,7 +13,7 @@ window.onload=function(){
 	
 }
 
-//divçš„æ˜¾ç¤º
+//divµÄÏÔÊ¾
 function show1 (){
 	var home = document.getElementById("content_home");
 	var history = document.getElementById("content_history");
@@ -77,34 +77,34 @@ function show5(){
 	setting.style.display = "none";
 }
 
-//divçš„æ˜¾ç¤ºç»“æŸã€‚ã€‚ã€‚ã€‚ã€‚
+//divµÄÏÔÊ¾½áÊø¡£¡£¡£¡£¡£
 
 
-//calendaræ—¥å†  å¼€å§‹ã€‚ã€‚ã€‚ã€‚ã€‚
+//calendarÈÕÀú  ¿ªÊ¼¡£¡£¡£¡£¡£
 	
 
-	//è®¡ç®—é—°å¹´
+	//¼ÆËãÈòÄê
 	function leapYear(year){
 		return (year%100==0? res=(year%400==0?1:0) : res=(year%4==0?1:0));
 	}
 	
 function printCalendar(){
 	document.write ("<table border='1' align='center' width='220' cellspacing='0'><tr><td align='center'>Sun</td><td align='center'>Mon</td><td align='center'>Tus</td><td align='center'>Wed</td><td align='center'>Thu</td><td align='center'>Fir</td><td align='center'>Sat</td></tr>");
-	var nowDate = new Date();//è·å¾—å½“å‰æ—¥æœŸ
-	var year = nowDate.getFullYear();//è·å¾—å¹´
-	var month = nowDate.getMonth();//è·å¾—æœˆ
-	var date = nowDate.getDate();//è·å¾—æ—¥
-	//è·å¾—å½“æœˆç¬¬ä¸€å¤©æ˜¯æ˜ŸæœŸå‡ 
+	var nowDate = new Date();//»ñµÃµ±Ç°ÈÕÆÚ
+	var year = nowDate.getFullYear();//»ñµÃÄê
+	var month = nowDate.getMonth();//»ñµÃÔÂ
+	var date = nowDate.getDate();//»ñµÃÈÕ
+	//»ñµÃµ±ÔÂµÚÒ»ÌìÊÇĞÇÆÚ¼¸
 	var firstdate = new Date(year, month, 1);
 	var firstday = firstdate.getDay();
 	
 	var m_days = new Array(31, 28+leapYear(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-	//æœˆæ—¥å†æ•°ç»„
+	//ÔÂÈÕÀúÊı×é
 	var cal = new Array();
 	var counter = 1;
 	for(var i=0; i<6; i++){
 		
-		//å¾€è¡¨æ ¼æ·»åŠ è¡Œ
+		//Íù±í¸ñÌí¼ÓĞĞ
 		document.write("<tr>");
 		
 		cal[i]=new Array();
@@ -113,7 +113,7 @@ function printCalendar(){
 				var a =  m_days[month-1]-firstday+1+k;
 				(a<=m_days[month-1])?cal[i][k]=a:cal[i][k]= counter++;
 				
-				//å¾€è¡¨æ ¼æ·»åŠ åˆ—
+				//Íù±í¸ñÌí¼ÓÁĞ
 				if(date<7){
 				cal[i][k]==date?document.write ("<td align='center' bgcolor='pink'>" + cal[i][k] + "</td>") : (cal[i][k]>7? document.write ("<td align='center' bgcolor='grey'>" + cal[i][k] + "</td>") : document.write ("<td align='center'>" + cal[i][k] + "</td>"));
 				} else{
@@ -130,7 +130,7 @@ function printCalendar(){
 			for(var k = 0; k<7; k++){
 				(counter<=m_days[month])?cal[i][k]=counter++:cal[i][k]= b++;
 				
-				//å¾€è¡¨æ ¼æ·»åŠ åˆ—
+				//Íù±í¸ñÌí¼ÓÁĞ
 				if(date>20){
 				cal[i][k]==date?document.write ("<td align='center' bgcolor='pink'>" + cal[i][k] + "</td>") : (cal[i][k]<7? document.write ("<td align='center' bgcolor='grey'>" + cal[i][k] + "</td>") : document.write ("<td align='center'>" + cal[i][k] + "</td>"));
 				} else{
